@@ -2,56 +2,57 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>THL | RSA-20 GURU DECODE [TECHNICAL AUDIT]</title>
     <style>
-        :root { --concrete: #D1D1D1; --shadow: #1A1A1A; --lab-grey: #4A4A4A; }
-        body { background-color: var(--concrete); color: var(--shadow); font-family: 'Courier New', Courier, monospace; text-transform: uppercase; margin: 0; display: flex; justify-content: center; align-items: center; min-height: 100vh; padding: 20px; }
-        #lab-container { border: 2px solid var(--shadow); padding: 40px; width: 100%; max-width: 750px; background: white; box-shadow: 20px 20px 0px var(--lab-grey); }
-        h1 { font-size: 1.1rem; border-bottom: 2px solid var(--shadow); padding-bottom: 10px; margin-bottom: 5px; }
-        .serial { font-size: 0.7rem; color: var(--lab-grey); margin-bottom: 30px; }
-        .step { margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px; }
-        label { display: block; font-size: 0.75rem; margin-bottom: 10px; font-weight: bold; line-height: 1.4; }
+        :root { --concrete: #F4F4F4; --shadow: #000000; --lab-grey: #4A4A4A; }
+        body { background-color: var(--concrete); color: var(--shadow); font-family: 'Times New Roman', Times, serif; text-transform: none; margin: 0; display: flex; justify-content: center; padding: 50px 20px; }
+        #lab-container { border: 1px solid var(--shadow); padding: 60px; width: 100%; max-width: 800px; background: white; }
+        h1 { font-size: 1.8rem; border-bottom: 1px solid var(--shadow); padding-bottom: 10px; margin-bottom: 5px; font-weight: normal; }
+        .serial { font-size: 0.7rem; color: var(--lab-grey); margin-bottom: 40px; letter-spacing: 2px; }
+        .category-header { font-weight: bold; font-size: 0.9rem; margin: 30px 0 15px 0; border-bottom: 1px solid #ddd; padding-bottom: 5px; }
+        .step { margin-bottom: 30px; }
+        label { display: block; font-size: 0.95rem; margin-bottom: 15px; line-height: 1.5; color: #333; }
         input[type=range] { width: 100%; cursor: crosshair; accent-color: var(--shadow); }
-        .labels { display: flex; justify-content: space-between; font-size: 0.55rem; color: #999; margin-top: 5px; }
-        .btn { background: var(--shadow); color: white; padding: 20px; border: none; cursor: pointer; font-family: 'Courier New', Courier, monospace; font-weight: bold; width: 100%; margin-top: 20px; letter-spacing: 2px; }
-        .result-box { display: none; margin-top: 20px; border-top: 2px solid var(--shadow); padding-top: 20px; }
-        #res-title { font-weight: bold; font-size: 1.1rem; color: #ff0000; }
-        #res-desc { font-size: 0.85rem; line-height: 1.5; margin: 20px 0; }
+        .labels { display: flex; justify-content: space-between; font-size: 0.65rem; color: #999; margin-top: 8px; }
+        .btn { background: var(--shadow); color: white; padding: 20px; border: none; cursor: pointer; font-family: inherit; font-size: 1rem; width: 100%; margin-top: 40px; transition: 0.3s; }
+        .btn:hover { background: #333; }
+        .result-box { display: none; margin-top: 40px; border-top: 1px solid var(--shadow); padding-top: 30px; }
+        #res-title { font-weight: bold; font-size: 1.4rem; margin-bottom: 20px; }
+        #res-desc { font-size: 1.1rem; line-height: 1.6; margin-bottom: 30px; }
     </style>
 </head>
 <body>
 <div id="lab-container">
     <h1>INSTRUMENT: RSA-20 [GURU DECODE]</h1>
-    <div class="serial">REF: THL-SYS-02-B | ANALYST: KAYLEE-JANE</div>
+    <div class="serial">[ THL_SYS_02 ] | PRINCIPAL ANALYST: KAYLEE-JANE</div>
     
     <div id="audit-form">
-        <!-- ORIGIN STRUCTURE -->
-        <div class="step"><label>01: ROLE IN EARLY ENVIRONMENT (ADAPTATION VS AUTONOMY)</label>
-            <input type="range" class="q" min="1" max="10" value="5"><div class="labels"><span>PRIMARY SUPPORT</span><span>SYSTEMIC ADAPTATION</span></div></div>
-        <div class="step"><label>02: UNSPOKEN RULES (CONFORMITY VS REBELLION)</label>
-            <input type="range" class="q" min="1" max="10" value="5"><div class="labels"><span>CLEAR LOGIC</span><span>HIDDEN ARCHITECTURE</span></div></div>
-        
-        <!-- IDENTITY STRUCTURE -->
-        <div class="step"><label>03: IDENTITY WITHOUT REPUTATION (CORE RESIDUE)</label>
-            <input type="range" class="q" min="1" max="10" value="5"><div class="labels"><span>INTACT</span><span>SCATTERED/NULL</span></div></div>
-        <div class="step"><label>04: PUBLIC VS PRIVATE DISSONANCE (PERSONA LOAD)</label>
-            <input type="range" class="q" min="1" max="10" value="5"><div class="labels"><span>ALIGNED</span><span>HIGH PERSONA FRICTION</span></div></div>
+        <div class="category-header">I. ORIGIN STRUCTURE</div>
+        <div class="step"><label>01. What role did you occupy in your early environment before you became a teacher?</label>
+            <input type="range" class="q" min="1" max="10" value="5"><div class="labels"><span>AUTONOMOUS</span><span>SYSTEMIC ADAPTATION</span></div></div>
+        <div class="step"><label>02. How did you primarily get your needs met as a child?</label>
+            <input type="range" class="q" min="1" max="10" value="5"><div class="labels"><span>DIRECT ASKING</span><span>PERFORMANCE/UTILITY</span></div></div>
 
-        <!-- REGULATION SIGNATURE -->
-        <div class="step"><label>05: SYSTEMIC RED-LINE (BURNOUT PROXIMITY)</label>
-            <input type="range" class="q" min="1" max="10" value="5"><div class="labels"><span>STABLE</span><span>STRUCTURAL FATIGUE</span></div></div>
+        <div class="category-header">II. IDENTITY STRUCTURE</div>
+        <div class="step"><label>03. When everything external is removed (titles, followers, reputation), what remains?</label>
+            <input type="range" class="q" min="1" max="10" value="5"><div class="labels"><span>CORE RESIDUE</span><span>STRUCTURAL VOID</span></div></div>
+        <div class="step"><label>04. How different is the person your followers see from the one you experience internally?</label>
+            <input type="range" class="q" min="1" max="10" value="5"><div class="labels"><span>FULLY ALIGNED</span><span>HIGH DISSONANCE</span></div></div>
+
+        <div class="category-header">III. REGULATION SIGNATURE</div>
+        <div class="step"><label>05. What is the cost your system pays to maintain your current level of functioning?</label>
+            <input type="range" class="q" min="1" max="10" value="5"><div class="labels"><span>SUSTAINABLE</span><span>CRITICAL EXHAUSTION</span></div></div>
 
         <button class="btn" onclick="analyze()">EXECUTE STRUCTURAL ANALYSIS</button>
     </div>
 
     <div id="results" class="result-box">
-        <div id="res-title">ANALYSIS COMPLETE: CATEGORY [REDACTED]</div>
+        <div id="res-title">ANALYSIS COMPLETE</div>
         <p id="res-desc"></p>
-        <div style="background:#000; color:#fff; padding:15px; font-size:0.75rem;">
-            REQUIRED ACTION: CONSULT DOSSIER-01 [CONCRETE MIND]
+        <div style="background:#f0f0f0; padding:20px; border-left: 5px solid #000; font-size:0.9rem;">
+            <strong>REQUIRED ACTION:</strong> CONSULT THE HUMAN LAB DOCTRINE AND CONCRETE MIND [VOL II].
         </div>
-        <a href="https://humanlabofficial.com" class="btn" style="text-decoration:none; display:block; text-align:center;">ACCESS THE TRILOGY</a>
+        <a href="https://humanlabofficial.com" class="btn" style="text-decoration:none; display:block; text-align:center;">RETURN TO LABORATORY</a>
     </div>
 </div>
 
@@ -63,13 +64,14 @@
         document.getElementById('results').style.display = 'block';
         
         let t = ""; let d = "";
-        if(sum < 15) { t = "THE HOLLOW SHELL"; d = "SYSTEMIC UNDER-LOAD. YOUR IDENTITY IS BUILT ON EXTERNAL VALIDATION LOOPS. WITHOUT A 'GURU' ROLE, YOUR INTERNAL ARCHITECTURE HAS ZERO BEARING CAPACITY."; }
-        else if(sum < 30) { t = "THE OSCILLATING CABLE"; d = "HIGH FLEXIBILITY, LOW FOUNDATION. YOU ARE TRAPPED IN A CYCLE OF 'HEALING' WITHOUT 'CONSTRUCTING'. YOUR ENERGY IS DISSIPATING LATERALLY."; }
-        else if(sum < 45) { t = "THE BRITTLE MONOLITH"; d = "CRITICAL TENSION. YOU HAVE BUILT A SUCCESSFUL PERSONA ON TOP OF A FRACTURED FOUNDATION. YOU ARE ONE DISRUPTION AWAY FROM A TOTAL IDENTITY SNAP."; }
-        else { t = "RED-LINE COLLAPSE"; d = "STRUCTURAL FAILURE IMMINENT. YOUR SYSTEM IS OPERATING AT 110% CAPACITY TO MAINTAIN THE IMAGE OF STABILITY. IMMEDIATE RE-ARCHITECTURE REQUIRED."; }
+        if(sum < 15) { t = "THE HOLLOW SHELL"; d = "Analysis reveals high dependency on external validation architecture. Your identity is a function of the role you occupy. Without a 'following,' the system collapses into meaninglessness. Immediate re-architecture of the core foundation is required."; }
+        else if(sum < 30) { t = "THE OSCILLATING CABLE"; d = "High systemic flexibility with low foundational anchoring. You move between 'expansion' and 'withdrawal' without creating permanent structure. You are processing experience but not integrating it into load-bearing capacity."; }
+        else if(sum < 45) { t = "THE BRITTLE MONOLITH"; d = "High performance capability built on a fractured origin logic. Your current success is the primary load-bearing element; should the role fail, the identity will snap. You are one disruption away from a structural cascade."; }
+        else { t = "RED-LINE LIMIT"; d = "The cost of maintaining your current persona has exceeded the system's capacity. Internal fractures are present in your decision-making logic. You are operating on 'Survival Structure' while projecting 'Meaning Structure'."; }
         
         document.getElementById('res-title').innerText = "STRUCTURAL CATEGORY: " + t;
         document.getElementById('res-desc').innerText = d;
+        window.scrollTo(0,0);
     }
 </script>
 </body>
